@@ -1,0 +1,44 @@
+04: 
+
+class Node:
+    def __init__(self, name, birth_year=None, gender=None):
+        self.name = name
+        self.birth_year = birth_year
+        self.gender = gender
+        self.left_child = None
+        self.right_child = None
+
+class FamilyTree:
+    def __init__(self, root):
+        self.root = root
+
+    def add_child(self, parent, child, is_left=True):
+        if is_left:
+            parent.left_child = child
+        else:
+            parent.right_child = child
+
+    def print_tree(self, node, level=0):
+        if node is not None:
+            print("  " * level + f"{node.name} ({node.birth_year}, {node.gender})")
+            self.print_tree(node.left_child, level + 1)
+            self.print_tree(node.right_child, level + 1)
+
+# Criando membros da família
+grandfather = Node("Grandfather", 1930, "Male")
+grandmother = Node("Grandmother", 1935, "Female")
+father = Node("Father", 1960, "Male")
+mother = Node("Mother", 1965, "Female")
+child1 = Node("Child1", 1985, "Male")
+child2 = Node("Child2", 1990, "Female")
+
+# Construindo a árvore genealógica
+family_tree = FamilyTree(grandfather)
+family_tree.add_child(grandfather, grandmother, is_left=False)
+family_tree.add_child(grandfather, father)
+family_tree.add_child(father, mother, is_left=False)
+family_tree.add_child(mother, child1, is_left=True)
+family_tree.add_child(mother, child2, is_left=False)
+
+# Imprimindo a árvore genealógica
+family_tree.print_tree(grandfather)
