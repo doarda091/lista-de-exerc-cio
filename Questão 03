@@ -1,0 +1,126 @@
+03: 
+
+A) 
+import time
+import random
+
+def bubble_sort(arr):
+    # Implementação do Bubble Sort
+    pass
+
+def selection_sort(arr):
+    # Implementação do Selection Sort
+    pass
+
+def quick_sort(arr):
+    # Implementação do Quick Sort
+    pass
+
+# Criar uma lista de 1000 elementos aleatórios
+random_list = [random.randint(1, 1000) for _ in range(1000)]
+
+# Medir o tempo de execução para o Bubble Sort
+start_time = time.time()
+bubble_sort(random_list.copy())
+bubble_sort_time = time.time() - start_time
+
+# Medir o tempo de execução para o Selection Sort
+start_time = time.time()
+selection_sort(random_list.copy())
+selection_sort_time = time.time() - start_time
+
+# Medir o tempo de execução para o Quick Sort
+start_time = time.time()
+quick_sort(random_list.copy())
+quick_sort_time = time.time() - start_time
+
+# Apresentar os resultados em uma tabela
+print("| Algoritmo      | Tempo de Execução (s) |")
+print("|-----------------|------------------------|")
+print(f"| Bubble Sort     | {bubble_sort_time:.6f}           |")
+print(f"| Selection Sort  | {selection_sort_time:.6f}           |")
+print(f"| Quick Sort      | {quick_sort_time:.6f}           |")
+
+B)
+import time
+import random
+
+def bubble_sort(arr):
+    # Implementação do Bubble Sort
+    pass
+
+def selection_sort(arr):
+    # Implementação do Selection Sort
+    pass
+
+def quick_sort(arr):
+    # Implementação do Quick Sort
+    pass
+
+# Criar uma lista de 10.000 elementos aleatórios
+random_list = [random.randint(1, 10000) for _ in range(10000)]
+
+# Medir o tempo de execução para o Bubble Sort
+start_time = time.time()
+bubble_sort(random_list.copy())
+bubble_sort_time = time.time() - start_time
+
+# Medir o tempo de execução para o Selection Sort
+start_time = time.time()
+selection_sort(random_list.copy())
+selection_sort_time = time.time() - start_time
+
+# Medir o tempo de execução para o Quick Sort
+start_time = time.time()
+quick_sort(random_list.copy())
+quick_sort_time = time.time() - start_time
+
+# Apresentar os resultados em uma tabela
+print("| Algoritmo      | Tempo de Execução (s) |")
+print("|-----------------|------------------------|")
+print(f"| Bubble Sort     | {bubble_sort_time:.6f}           |")
+print(f"| Selection Sort  | {selection_sort_time:.6f}           |")
+print(f"| Quick Sort      | {quick_sort_time:.6f}           |")
+
+C)
+import time
+import random
+
+def bubble_sort(arr):
+    # Implementação do Bubble Sort
+    pass
+
+def selection_sort(arr):
+    # Implementação do Selection Sort
+    pass
+
+def quick_sort(arr):
+    # Implementação do Quick Sort
+    pass
+
+# Criar uma lista de 100.000 elementos aleatórios
+random_list = [random.randint(1, 100000) for _ in range(100000)]
+
+# Medir o tempo de execução para o Bubble Sort
+start_time = time.time()
+bubble_sort(random_list.copy())
+bubble_sort_time = time.time() - start_time
+
+# Medir o tempo de execução para o Selection Sort
+start_time = time.time()
+selection_sort(random_list.copy())
+selection_sort_time = time.time() - start_time
+
+# Medir o tempo de execução para o Quick Sort
+start_time = time.time()
+quick_sort(random_list.copy())
+quick_sort_time = time.time() - start_time
+
+# Apresentar os resultados em uma tabela
+print("| Algoritmo      | Tempo de Execução (s) |")
+print("|-----------------|------------------------|")
+print(f"| Bubble Sort     | {bubble_sort_time:.6f}           |")
+print(f"| Selection Sort  | {selection_sort_time:.6f}           |")
+print(f"| Quick Sort      | {quick_sort_time:.6f}           |")
+
+
