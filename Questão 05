@@ -1,0 +1,4 @@
+05:
+
+A ordem mais adequada é a in-ordem, pois isso significa que ao percorrer a árvore, visitaria primeiro o nó esquerdo, depois o nó atual e
+por último o nó direito. Então nesse caso, a árvore seria construída levando em conta a precedência dos operadores.
